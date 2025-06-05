@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log into WowoW</title>
+    <link rel="stylesheet" href="../src/styles/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left"></div>
+        <div class="right">
+            <form class="login-box">
+                <div class="login-title">Log into WowoW</div>
+                <input class="login-input" type="text" placeholder="Mobile number, username or email" required>
+                <input class="login-input" type="password" placeholder="Password?" required>
+                <button class="login-btn" type="submit">Login</button>
+                <div class="login-links">
+                    <a href="../public/forgot.html">Forgot password?</a>
+                    <a href="../public/create.html">Create new password</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Viết scripts ngay trên file html. Thực hiện chức năng kiểm tra đăng nhập nếu có username là test và mật khẩu là 123 sẽ di chuyển đến trang home-->
+    <script>
+        document.querySelector('.login-box').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.querySelector('.login-input[type="text"]').value;
+            const password = document.querySelector('.login-input[type="password"]').value;
+
+            if (username === 'test' && password === '123') {
+                window.location.href = '../public/home.html';
+            } else {
+                alert('Invalid username or password');
+            }
+        });
+    </script>
+</body>
+</html>
