@@ -42,7 +42,7 @@ body {
             margin-bottom: 10px;
             background: #fff;
             color: #5B7B5A;
-            font-family: inherit;
+            font-family: Dongle, sans-serif;
             box-sizing: border-box;
         }
         .login-btn {
