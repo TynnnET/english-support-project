@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../project/css/styles.css">
+    <title>WowwoW</title>
+</head>
+<body>
+    <div class="container">
+        <div id="sidebar">
+            <h2>WowwoW - Gợi ý học tiếng Anh cá nhân hoá</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    <form id="learningForm">
+      <label for="level">Trình độ tiếng Anh hiện tại:</label>
+      <select id="level">
+        <option value="beginner">Mới bắt đầu</option>
+        <option value="intermediate">Trung bình</option>
+        <option value="advanced">Nâng cao</option>
+      </select>
+
+      <label for="goal">Mục tiêu học tập:</label>
+      <select id="goal">
+        <option value="speaking">Nói tốt hơn</option>
+        <option value="listening">Nghe tốt hơn</option>
+        <option value="vocabulary">Tăng từ vựng</option>
+        <option value="grammar">Cải thiện ngữ pháp</option>
+      </select>
+
+      <label for="time">Bạn có thể học mỗi ngày bao lâu?</label>
+      <select id="time">
+        <option value="15">15 phút</option>
+        <option value="30">30 phút</option>
+        <option value="60">1 giờ</option>
+      </select>
+
+      <button type="button" onclick="suggestMethod()">Gợi ý ngay</button>
+    </form>
+    </div>
+</body>
+</html>
