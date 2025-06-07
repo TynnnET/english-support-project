@@ -143,15 +143,21 @@ form {
   min-width: 350px;
 }
 
-.form__row select, textarea{
+.form__row select, textarea {
   font-family: "Dongle", sans-serif;
   font-size: 28px;
   border-radius: 28px;
-  height: 80px;
+  height: 50px;
   flex: 1;
+  position: relative;
+  top: 15px;
+}
+.form__row select, textarea{
+  padding-left: 20px;
   display: flex;
   align-items: center;
 }
+
 
 select option, textarea{
   font-family: "Dongle", sans-serif;
