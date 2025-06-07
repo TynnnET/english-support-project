@@ -1,47 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../project/css/styles.css">
-    <title>WowwoW</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>WowwoW - Gợi ý phương pháp học tiếng anh cá nhân hoá</title>
 </head>
 <body>
-    <div class="container">
-        <div id="sidebar">
-            <h2>WowwoW - Gợi ý học tiếng Anh cá nhân hoá</h2>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+  <!-- == Start Header == -->
+  <header>
+    <div class="nav">
+      <div class="logo">
+        <h1>WowwoW - Gợi ý phương pháp học tiếng anh cá nhân hoá</h1>
+      </div>
+      <div class="nav-menu">
+        <ul>
+          <li><a href="../pages/home.html">Home</a></li>
+          <li><a href="../pages/about.html">About us</a></li>
+          <li><a href="../pages/contact.html">Contact</a></li>
+          <li><a href="../pages/test.html">Test</a></li>
+          <li><a href="../pages/login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- == End Header == -->
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Chào mừng bạn đến với WowwoW, nơi chúng tôi cung cấp những gợi ý học tiếng Anh cá nhân hoá dựa trên trình độ của bạn.</h2>
+        <img src="../assets/images/hero-image.png" alt="Hero Image" class="hero-image">
+      </div>
+    </section>
+    <section class="features">
+      <h2>Những tính năng nổi bật</h2>
+      <div class="feature-list">
+        <div class="feature-item">
+          <h3>Kiểm tra trình độ tiếng anh</h3>
+          <p>Chúng tôi sử dụng các bài đánh giá trực quan để đưa ra thực lực thực tế của bạn</p>
+        <div class="feature-item">
+          <h3>Phương pháp học cá nhân hoá</h3>
+          <p>Chúng tôi cung cấp những phương pháp học tiếng Anh phù hợp với từng cá nhân.</p>
         </div>
-    <form id="learningForm">
-      <label for="level">Trình độ tiếng Anh hiện tại:</label>
-      <select id="level">
+        <div class="feature-item">
+          <h3>Gợi ý từ chuyên gia</h3>
+          <p>Các gợi ý được xây dựng dựa trên kinh nghiệm của các chuyên gia trong lĩnh vực giáo dục.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Hỗ trợ 24/7</h3>
+          <p>Đội ngũ hỗ trợ luôn sẵn sàng giúp đỡ bạn bất cứ lúc nào.</p>
+        </div>
+      </div>
+    </section>
+    <section class="methods">
+      <h2>Phương pháp học</h2>
+      <div class="method-list">
+        <div class="method-item">
+          <h3>Phương pháp giao tiếp</h3>
+          <p>Học tiếng Anh thông qua giao tiếp thực tế, giúp bạn tự tin hơn khi nói chuyện.</p>
+        </div>
+        <div class="method-item">
+          <h3>Phương pháp nghe</h3>
+          <p>Cải thiện kỹ năng nghe thông qua các bài nghe đa dạng và phong phú.</p>
+        </div>
+        <div class="method-item">
+          <h3>Phương pháp đọc</h3>
+          <p>Nâng cao khả năng đọc hiểu thông qua các tài liệu phù hợp với trình độ của bạn.</p>
+        </div>
+        <div class="method-item">
+          <h3>Phương pháp viết</h3>
+          <p>Cải thiện kỹ năng viết thông qua các bài tập thực hành và phản hồi từ giáo viên.</p>
+        </div>
+      </div>
+    </section>
+    <form action="index.html" class="suggestions">
+      <h2>Gợi ý phương pháp học</h2>
+      <p>Hãy cho chúng tôi biết trình độ tiếng Anh của bạn để nhận được những gợi ý phù hợp nhất.</p>
+      <div class="form__row">
+        <label class="form__label" for="level">Chọn trình độ của bạn:</label>
+      <select id="level" name="level">
         <option value="beginner">Mới bắt đầu</option>
-        <option value="intermediate">Trung bình</option>
+        <option value="intermediate">Trung cấp</option>
         <option value="advanced">Nâng cao</option>
       </select>
-
-      <label for="goal">Mục tiêu học tập:</label>
-      <select id="goal">
-        <option value="speaking">Nói tốt hơn</option>
-        <option value="listening">Nghe tốt hơn</option>
-        <option value="vocabulary">Tăng từ vựng</option>
-        <option value="grammar">Cải thiện ngữ pháp</option>
+      </div>
+      <div class="form__row">
+        <label class="form__label" for="skill">Chọn kỹ năng muốn cải thiện:</label>
+      <select id="skill" name="skill">
+        <option value="speaking">Giao tiếp</option>
+        <option value="listening">Nghe</option>
+        <option value="reading">Đọc</option>
+        <option value="writing">Viết</option>
       </select>
-
-      <label for="time">Bạn có thể học mỗi ngày bao lâu?</label>
-      <select id="time">
-        <option value="15">15 phút</option>
-        <option value="30">30 phút</option>
-        <option value="60">1 giờ</option>
-      </select>
-
-      <button type="button" onclick="suggestMethod()">Gợi ý ngay</button>
+      </div>
+      <div class="form__row">
+        <label class="form__label" for="hoppy">Sở thích của bạn:</label>
+        <select name="hoppy" id="hoppy">
+          <option value="listening__music">Nghe nhạc</option>
+          <option value="watching__tv">Xem phim</option>
+          <option value="reading__book">Đọc sách</option>
+          <option value="playing__game">Chơi game</option>
+          <option value="other">Khác</option>
+        </select>
+      </div>
+      <div class="form__row">
+        <label class="form__label" for="goal">Mục tiêu học tập:</label>
+        <select name="goal" id="goal">
+          <option value="travel">Du lịch</option>
+          <option value="work">Công việc</option>
+          <option value="study">Học tập</option>
+          <option value="social">Giao tiếp xã hội</option>
+          <option value="general">Tổng quát</option>
+          <option value="other">Khác</option>
+        </select>
+      </div>
+      <div class="form__row">
+        <label class="form__label" for="comments">Nhận xét hoặc yêu cầu thêm:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Nhập nhận xét hoặc yêu cầu của bạn ở đây..."></textarea>  
+      </div>
+      <button type="submit">Gửi</button>
     </form>
-    </div>
+  </main>
+  <footer></footer>
+  <script src="../js/main.js"></script>
 </body>
 </html>
